@@ -1,4 +1,118 @@
-html {
-  height: 100%;
-  width: 100%;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+nav {
+  background-color: #e0e0c6;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: blue;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: maroon;
+}
+
+.container {
+  display: flex;
+}
+
+.left {
+  width: 20%;
+  background-color: #ffe082;
+  padding: 10px;
+}
+
+main {
+  width: 60%;
+  background-color: #fff9c4;
+  padding: 10px;
+}
+
+.right {
+  width: 20%;
+  background-color: #ffe082;
+  padding: 10px;
+}
+
+form input, form textarea {
+  width: 95%;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+img {
+  max-width: 100%;
+  width: 250px;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+main form,
+main div#quizForm {
+  background-color: #fffde7;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+main h2 {
+  margin-top: 0;
+}
+
+main p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+main label {
+  display: block;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+#quizForm {
+  background-color: #fffde7;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#quizForm p {
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+#quizForm label {
+  display: block;
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+#triviaResult {
+  background-color: #e0f7fa;
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
 }

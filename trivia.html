@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trivia - Jake's Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Jake’s Trivia Quiz</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">HOME</a> |
+    <a href="portfolio.html">PORTFOLIO</a> |
+    <a href="trivia.html">TRIVIA</a>
+  </nav>
+
+  <div class="container">
+
+    <aside class="left">
+      <h3>Useful Links</h3>
+      <ul>
+        <li><a href="https://whdh.com/news/hull-hs-student-creates-walker-designed-for-vision-impaired/" target="_blank">WHDH News</a></li>
+        <li><a href="https://www.patriotledger.com/story/lifestyle/2024/05/28/hull-student-wins-hackathon-design-for-grandmas-smart-walker-massachusetts-institute-technology/73734835007/" target="_blank">Patriot Ledger</a></li>
+        <li><a href="https://www.linkedin.com/in/jake-smith-230000221/" target="_blank">My LinkedIn</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <h2>Trivia: How Well Do You Know Jake?</h2>
+
+      <div id="quizForm">
+
+        <p>1. What university does Jake attend?</p>
+        <label><input type="radio" name="q1" value="a"> Harvard</label>
+        <label><input type="radio" name="q1" value="b"> Kyoto University</label>
+        <label><input type="radio" name="q1" value="c"> Ritsumeikan University</label>
+
+        <p>2. What did Jake invent?</p>
+        <label><input type="radio" name="q2" value="a"> Self-flying drone</label>
+        <label><input type="radio" name="q2" value="b"> Smart walker</label>
+        <label><input type="radio" name="q2" value="c"> AI-powered wheelchair</label>
+
+        <p>3. Where is Jake from?</p>
+        <label><input type="radio" name="q3" value="a"> Osaka</label>
+        <label><input type="radio" name="q3" value="b"> Boston</label>
+        <label><input type="radio" name="q3" value="c"> San Francisco</label>
+
+        <p>4. What does Jake love doing?</p>
+        <label><input type="radio" name="q4" value="a"> Playing piano</label>
+        <label><input type="radio" name="q4" value="b"> Building robots and playing basketball</label>
+        <label><input type="radio" name="q4" value="c"> Writing poetry</label>
+
+        <br><br>
+        <button onclick="checkTrivia()">Submit</button>
+      </div>
+
+      <p id="triviaResult" style="font-weight:bold; margin-top:15px;"></p>
+    </main>
+
+    <aside class="right">
+      <h3>Contact Me</h3>
+      <form>
+        <input type="text" placeholder="Your name"><br>
+        <input type="email" placeholder="Your email"><br>
+        <textarea placeholder="Your message"></textarea><br>
+        <button type="submit">Send</button>
+        <button type="reset">Clear</button>
+      </form>
+    </aside>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Jake Smith. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
