@@ -1,50 +1,91 @@
-/* CONTACT PAGE STYLES */
-.contact-hero .overlay {
-  background: rgba(0,0,0,0.55);
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
 }
 
-.form-card {
+header {
+  background: #2b6cb0;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background: #1d4f91;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  margin: 20px;
+}
+
+.left, .right {
+  width: 25%;
   background: #fff;
-  border-radius: 16px;
-  box-shadow: var(--shadow);
-  padding: 32px;
-  margin-top: 32px;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.form {
-  display: grid;
-  gap: 18px;
+main {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+main img {
+  margin-top: 15px;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+form input, form textarea {
+  width: 95%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  background: #2b6cb0;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #1d4f91;
+}
+
+footer {
+  background: #2b6cb0;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
   margin-top: 20px;
 }
 
-.form label {
-  display: grid;
-  gap: 6px;
-  font-weight: 600;
-  color: var(--ink);
-}
-
-.form input,
-.form textarea {
-  padding: 14px 14px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  font: inherit;
-  width: 100%;
-}
-
-.form textarea {
-  resize: vertical;
-  min-height: 120px;
-}
-
-.form button {
-  margin-top: 10px;
-  font-size: 1rem;
-}
-
-.form a.btn.ghost {
-  margin-top: 10px;
-  text-align: center;
-  display: block;
+.jp {
+  font-size: 0.9em;
+  color: #555;
 }
