@@ -1,234 +1,135 @@
 <!doctype html>
-<html lang="en" data-lang="en">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>VisionPath Smart Walker</title>
-  <meta name="description" content="VisionPath is a smart walker that supports safer daily mobility for seniors and people with vision loss." />
+  <meta name="description" content="A smart walker designed to support safer everyday mobility." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦯</text></svg>">
   <link rel="stylesheet" href="styles.css" />
-  <script>
-    function setLang(lang){
-      document.documentElement.setAttribute('data-lang', lang);
-      localStorage.setItem('vp-lang', lang);
-      document.getElementById('lang-en').classList.toggle('active', lang==='en');
-      document.getElementById('lang-jp').classList.toggle('active', lang==='jp');
-    }
-    document.addEventListener('DOMContentLoaded', ()=>{
-      setLang(localStorage.getItem('vp-lang') || 'en');
-    });
-  </script>
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <a class="logo" href="index.html">VisionPath</a>
+      <a class="logo" href="#top">VisionPath</a>
       <nav class="nav">
-        <a href="#problem">Problem</a>
-        <a href="#solution">Solution</a>
-        <a href="#impact">Impact</a>
-        <a href="#features">Key Features</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
         <a href="#faq">FAQ</a>
-        <a href="#press">Press</a>
         <a class="btn sm" href="contact.html">Contact</a>
-        <div class="lang">
-          <button id="lang-en" onclick="setLang('en')">EN</button>
-          <button id="lang-jp" onclick="setLang('jp')">日本語</button>
-        </div>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <h1 class="en">VisionPath Smart Walker</h1>
-        <h1 class="jp">ビジョンパス・スマートウォーカー</h1>
-        <p class="lead en">Smart support for safer everyday walking.</p>
-        <p class="lead jp">毎日の歩行を、より安心に。</p>
+  <!-- HERO: set your best photo at images/hero.jpg -->
+  <section id="top" class="hero" style="--hero:url('images/hero.jpg')">
+    <div class="overlay">
+      <div class="container hero-inner">
+        <h1>VisionPath Smart Walker</h1>
+        <p class="lead">Smart support for safer everyday walking</p>
+        <p class="lead jp">毎日の歩行をより安心に</p>
         <div class="cta">
           <a class="btn" href="contact.html">Request a demo</a>
-          <a class="btn ghost" href="#solution">Learn more</a>
+          <a class="btn ghost" href="#gallery">See photos</a>
         </div>
-        <p class="tiny legal en">IP notice: details available under NDA. Patent in preparation.</p>
-        <p class="tiny legal jp">知財に関する注意: 詳細情報は秘密保持契約のもとでのみ提供します。特許出願準備中。</p>
-      </div>
-      <div class="hero-img">
-        <!-- Replace with your own image if you have one -->
-        <img src="https://images.unsplash.com/photo-1545249390-6bdfa286032f?q=80&w=1400&auto=format&fit=crop" alt="Smart mobility concept" />
+        <p class="tiny legal">Details available under NDA. Patent in preparation</p>
+        <p class="tiny legal jp">詳細は秘密保持契約のもとで提供。特許出願準備中</p>
       </div>
     </div>
   </section>
 
-  <section id="problem" class="section">
-    <div class="container narrow">
-      <h2 class="en">The Problem</h2>
-      <h2 class="jp">私たちが向き合う課題</h2>
-      <p class="en">
-        Many seniors and people with vision loss want to move independently, but daily environments can be unpredictable.
-        Families also want peace of mind when loved ones go out.
-      </p>
-      <p class="jp">
-        高齢者や視覚に不自由のある方は自立した移動を望んでいますが、日常環境には不意のリスクがあります。
-        ご家族も外出時の安心を求めています。
-      </p>
-    </div>
-  </section>
-
-  <section id="solution" class="section alt">
-    <div class="container two-col">
-      <div>
-        <h2 class="en">Our Solution</h2>
-        <h2 class="jp">ビジョンパスの解決策</h2>
-        <p class="en">
-          VisionPath is a smart walker that elevates situational awareness and provides gentle guidance cues.
-          It is designed to be simple, comfortable, and helpful in everyday life.
-        </p>
-        <p class="jp">
-          ビジョンパスは周囲の状況認識を高め、やさしいガイダンスで歩行を支援するスマート歩行器です。
-          日常で使いやすく、負担が少ない設計を目指しています。
-        </p>
-        <ul class="bullets en">
-          <li>Helps notice potential hazards sooner</li>
-          <li>Provides intuitive guidance cues</li>
-          <li>Keeps setup and daily use simple</li>
-        </ul>
-        <ul class="bullets jp">
-          <li>潜在的なリスクの早期気づきをサポート</li>
-          <li>直感的なガイダンス</li>
-          <li>設定と日常運用はシンプル</li>
-        </ul>
-        <p class="tiny en">Note: internal methods are confidential and not shown on this site.</p>
-        <p class="tiny jp">注: 内部方式は非公開です。本サイトでは開示していません。</p>
-      </div>
-      <div>
-        <div class="video placeholder">
-          <div class="ph-text en">Demo available on request</div>
-          <div class="ph-text jp">デモはお問い合わせください</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="impact" class="section">
+  <!-- GALLERY: drop your images in /images and update names if different -->
+  <section id="gallery" class="section">
     <div class="container">
-      <h2 class="en">Who Benefits</h2>
-      <h2 class="jp">想定される利用シーン</h2>
-      <div class="card-grid">
-        <article class="card">
-          <h3 class="en">Independent living</h3>
-          <h3 class="jp">自立した生活の後押し</h3>
-          <p class="en">Supports confidence at home and in familiar places.</p>
-          <p class="jp small">自宅や馴染みの場所での安心感をサポート。</p>
-        </article>
-        <article class="card">
-          <h3 class="en">Care facilities</h3>
-          <h3 class="jp">介護・福祉の現場</h3>
-          <p class="en">Designed to fit into daily routines with minimal training.</p>
-          <p class="jp small">短時間の導入で日々の業務に組み込みやすい設計。</p>
-        </article>
-        <article class="card">
-          <h3 class="en">Family peace of mind</h3>
-          <h3 class="jp">ご家族の安心</h3>
-          <p class="en">A practical way to support safer mobility.</p>
-          <p class="jp small">より安全な歩行を支える実用的な選択肢。</p>
-        </article>
+      <h2>Gallery <span class="jp sub">ギャラリー</span></h2>
+      <div class="masonry">
+        <figure class="shot"><img src="images/walker-1.jpg" alt="Prototype front view"><figcaption>Prototype front</figcaption></figure>
+        <figure class="shot"><img src="images/walker-2.jpg" alt="Handle and frame"><figcaption>Handle and frame</figcaption></figure>
+        <figure class="shot"><img src="images/walker-3.jpg" alt="Hallway test"><figcaption>Hallway test</figcaption></figure>
+        <figure class="shot"><img src="images/walker-4.jpg" alt="Outdoor use"><figcaption>Outdoor use</figcaption></figure>
+        <figure class="shot"><img src="images/walker-5.jpg" alt="Build closeup"><figcaption>Build closeup</figcaption></figure>
+        <figure class="shot"><img src="images/walker-6.jpg" alt="User trial"><figcaption>User trial</figcaption></figure>
       </div>
     </div>
   </section>
 
+  <!-- FEATURES: keep high level for IP safety -->
   <section id="features" class="section alt">
-    <div class="container narrow">
-      <h2 class="en">Key Features</h2>
-      <h2 class="jp">主な特長</h2>
-      <ul class="feature-list">
-        <li>
-          <strong class="en">Smart awareness</strong>
-          <strong class="jp">スマートな気づき</strong>
-          <span class="en">Helps recognize nearby obstacles and gaps.</span>
-          <span class="jp">周囲の障害物や段差への気づきをサポート。</span>
-        </li>
-        <li>
-          <strong class="en">Gentle guidance</strong>
-          <strong class="jp">やさしいガイダンス</strong>
-          <span class="en">Clear cues that are easy to understand during walking.</span>
-          <span class="jp">歩行中でも分かりやすい合図。</span>
-        </li>
-        <li>
-          <strong class="en">Everyday simplicity</strong>
-          <strong class="jp">日常に寄り添う簡便さ</strong>
-          <span class="en">Simple setup and daily use.</span>
-          <span class="jp">導入や日々の使用はシンプル。</span>
-        </li>
-      </ul>
-
-      <div class="cta center">
+    <div class="container">
+      <h2>Key Features <span class="jp sub">主な特長</span></h2>
+      <div class="cards">
+        <article class="card">
+          <img src="images/feature-awareness.jpg" alt="Awareness">
+          <h3>Smart awareness</h3>
+          <p>Helps recognize nearby obstacles and gaps</p>
+          <p class="jp small">周囲の障害物や段差への気づきをサポート</p>
+        </article>
+        <article class="card">
+          <img src="images/feature-guidance.jpg" alt="Guidance">
+          <h3>Gentle guidance</h3>
+          <p>Clear cues that are easy to understand while walking</p>
+          <p class="jp small">歩行中でも分かりやすい合図</p>
+        </article>
+        <article class="card">
+          <img src="images/feature-simple.jpg" alt="Simple">
+          <h3>Everyday simplicity</h3>
+          <p>Simple setup and daily use</p>
+          <p class="jp small">導入と日常の操作が簡単</p>
+        </article>
+      </div>
+      <div class="center pad-top">
         <a class="btn" href="contact.html">Partner with us</a>
-        <p class="tiny en">Pilots and evaluations are available. Details under NDA.</p>
-        <p class="tiny jp">実証実験や評価のご相談が可能です。詳細は秘密保持契約のもとで提供します。</p>
+        <p class="tiny">Pilots and evaluations available under NDA</p>
       </div>
     </div>
   </section>
 
-  <section id="faq" class="section">
-    <div class="container narrow">
-      <h2 class="en">FAQ</h2>
-      <h2 class="jp">よくある質問</h2>
-
-      <details>
-        <summary>
-          <span class="en">Who is it for?</span>
-          <span class="jp">対象は？</span>
-        </summary>
-        <p class="en">People seeking safer daily mobility at home or in facilities.</p>
-        <p class="jp">ご家庭や施設で、より安全な歩行を求める方。</p>
-      </details>
-
-      <details>
-        <summary>
-          <span class="en">Can I see a demo?</span>
-          <span class="jp">デモは見られますか？</span>
-        </summary>
-        <p class="en">Yes. Use the Contact page to request a demo. We share details under NDA.</p>
-        <p class="jp">可能です。お問い合わせページからご依頼ください。詳細は秘密保持契約のもとで共有します。</p>
-      </details>
-
-      <details>
-        <summary>
-          <span class="en">Is it available for purchase?</span>
-          <span class="jp">購入できますか？</span>
-        </summary>
-        <p class="en">We are preparing pilot programs. Please contact us to discuss timelines.</p>
-        <p class="jp">現在パイロット導入を準備中です。時期についてはお問い合わせください。</p>
-      </details>
+  <!-- ABOUT: short and visual -->
+  <section id="about" class="section">
+    <div class="container about-grid">
+      <div>
+        <h2>About <span class="jp sub">開発の背景</span></h2>
+        <p>Many seniors and people with vision loss want to move independently. VisionPath aims to support safer walking with clear simple guidance</p>
+        <p class="jp">高齢者や視覚に不自由のある方が自立して移動できるように ビジョンパスは分かりやすくシンプルな支援を目指しています</p>
+      </div>
+      <figure class="about-photo">
+        <img src="images/about.jpg" alt="Testing VisionPath">
+      </figure>
     </div>
   </section>
 
-  <section id="press" class="section alt">
+  <!-- FAQ -->
+  <section id="faq" class="section alt">
     <div class="container narrow">
-      <h2 class="en">Press and Recognition</h2>
-      <h2 class="jp">報道・受賞</h2>
-      <ul class="links">
-        <li><a href="https://whdh.com" target="_blank" rel="noopener">WHDH News</a></li>
-        <li><a href="https://www.patriotledger.com" target="_blank" rel="noopener">Patriot Ledger</a></li>
-        <li><a href="https://www.linkedin.com/in/jakesmith78" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="contact.html">Request media kit</a></li>
-      </ul>
+      <h2>FAQ <span class="jp sub">よくある質問</span></h2>
+
+      <details>
+        <summary>Who is it for</summary>
+        <p>People seeking safer daily mobility at home or in facilities</p>
+        <p class="jp">ご家庭や施設でより安全な歩行を求める方</p>
+      </details>
+
+      <details>
+        <summary>Can I see a demo</summary>
+        <p>Yes Use the Contact page to request a demo Details are shared under NDA</p>
+        <p class="jp">可能です お問い合わせページからご依頼ください 詳細は秘密保持契約のもとで共有します</p>
+      </details>
+
+      <details>
+        <summary>Is it available for purchase</summary>
+        <p>Pilot programs are in preparation Please contact us to discuss timelines</p>
+        <p class="jp">現在パイロット導入を準備中です 時期についてはお問い合わせください</p>
+      </details>
     </div>
   </section>
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div>
-        <strong>VisionPath</strong>
-        <p class="small en">Assistive mobility for real life.</p>
-        <p class="small jp">毎日の移動を、もっと安心に。</p>
-      </div>
-      <div>
-        <a href="contact.html" class="btn">Contact</a>
-      </div>
+      <p>© 2025 VisionPath</p>
+      <a class="btn sm" href="contact.html">Contact</a>
     </div>
-    <div class="container tiny">© 2025 VisionPath</div>
   </footer>
 </body>
 </html>
