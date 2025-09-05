@@ -1,119 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
   <title>VisionPath Smart Walker</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <!-- HEADER -->
-  <header class="site-header">
-    <div class="container">
-      <a class="logo" href="#top">VisionPath</a>
-      <nav class="nav">
-        <a href="#gallery">Gallery</a>
-        <a href="#features">Features</a>
-        <a href="#about">About</a>
-        <a href="#faq">FAQ</a>
-        <a class="btn sm" href="contact.html">Contact</a>
-      </nav>
-    </div>
+  <header>
+    <h1>Welcome to VisionPath’s Website</h1>
+    <p class="jp">ビジョンパスの公式ウェブサイトへようこそ</p>
   </header>
 
-  <!-- HERO -->
-  <section id="top" class="hero" style="--hero:url('images/hero.jpg')">
-    <div class="overlay">
-      <div class="container hero-inner">
-        <h1>VisionPath Smart Walker</h1>
-        <p class="lead">Smart support for safer everyday walking</p>
-        <p class="lead jp">毎日の歩行をより安心に</p>
-        <div class="cta">
-          <a class="btn" href="contact.html">Request a demo</a>
-          <a class="btn ghost" href="#gallery">See Photos</a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="index.html">HOME / ホーム</a> |
+    <a href="contact.html">CONTACT / お問い合わせ</a>
+  </nav>
 
-  <!-- GALLERY -->
-  <section id="gallery" class="section">
-    <div class="container">
-      <h2>Gallery <span class="jp sub">ギャラリー</span></h2>
-      <div class="masonry">
-        <figure class="shot"><img src="images/walker-1.jpg" alt=""><figcaption>Prototype front</figcaption></figure>
-        <figure class="shot"><img src="images/walker-2.jpg" alt=""><figcaption>Handle and frame</figcaption></figure>
-        <figure class="shot"><img src="images/walker-3.jpg" alt=""><figcaption>Hallway test</figcaption></figure>
-        <figure class="shot"><img src="images/walker-4.jpg" alt=""><figcaption>Outdoor use</figcaption></figure>
-        <figure class="shot"><img src="images/walker-5.jpg" alt=""><figcaption>Build closeup</figcaption></figure>
-        <figure class="shot"><img src="images/walker-6.jpg" alt=""><figcaption>User trial</figcaption></figure>
-      </div>
-    </div>
-  </section>
+  <!-- CONTENT WRAPPER -->
+  <div class="container">
 
-  <!-- FEATURES -->
-  <section id="features" class="section alt">
-    <div class="container">
-      <h2>Key Features <span class="jp sub">主な特長</span></h2>
-      <div class="card-grid">
-        <article class="card">
-          <img src="images/feature-awareness.jpg" alt="">
-          <h3>Smart Awareness</h3>
-          <p>Helps recognize nearby obstacles and risks</p>
-        </article>
-        <article class="card">
-          <img src="images/feature-guidance.jpg" alt="">
-          <h3>Gentle Guidance</h3>
-          <p>Clear cues that are easy to understand while walking</p>
-        </article>
-        <article class="card">
-          <img src="images/feature-simple.jpg" alt="">
-          <h3>Everyday Simplicity</h3>
-          <p>Simple setup and daily use</p>
-        </article>
-      </div>
-    </div>
-  </section>
+    <!-- LEFT SIDEBAR: MEDIA -->
+    <aside class="left">
+      <h3>Media Coverage <span class="jp">報道掲載</span></h3>
+      <ul>
+        <li><a href="https://whdh.com/news/hull-hs-student-creates-walker-designed-for-vision-impaired/" target="_blank">WHDH News</a></li>
+        <li><a href="https://www.patriotledger.com/story/lifestyle/2024/05/28/hull-student-wins-hackathon-design-for-grandmas-smart-walker-massachusetts-institute-technology/73734835007/" target="_blank">Patriot Ledger</a></li>
+        <li><a href="https://www.linkedin.com/in/jake-smith-230000221/" target="_blank">LinkedIn</a></li>
+      </ul>
+    </aside>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container about-grid">
-      <div>
-        <h2>About <span class="jp sub">開発の背景</span></h2>
-        <p>Inspired by family, built with care, and now being developed in Japan — VisionPath is designed to support independence and safety in everyday walking.</p>
-      </div>
-      <div class="about-photo">
-        <img src="images/about.jpg" alt="">
-      </div>
-    </div>
-  </section>
+    <!-- MAIN: ABOUT COMPANY -->
+    <main>
+      <h2>About VisionPath <span class="jp">ビジョンパスについて</span></h2>
+      <p>
+        VisionPath is developing a smart walker designed to support safer mobility for seniors and people with vision loss. 
+        The walker provides simple guidance and helps users feel more confident in daily life.
+      </p>
+      <p class="jp">
+        ビジョンパスは、高齢者や視覚に不自由のある方の安全な移動を支援するスマート歩行器を開発しています。<br>
+        わかりやすいガイダンスを提供し、日常生活で安心して歩行できるようサポートします。
+      </p>
+      <img src="images/walker-1.jpg" alt="VisionPath prototype" width="300">
+    </main>
 
-  <!-- FAQ -->
-  <section id="faq" class="section alt">
-    <div class="container narrow">
-      <h2>FAQ <span class="jp sub">よくある質問</span></h2>
-      <details>
-        <summary>Who is it for?</summary>
-        <p>People seeking safer mobility at home or in facilities.</p>
-      </details>
-      <details>
-        <summary>Can I see a demo?</summary>
-        <p>Yes, use the Contact page to request a demo. Details are shared under NDA.</p>
-      </details>
-      <details>
-        <summary>Is it available for purchase?</summary>
-        <p>Pilot programs are in preparation. Please contact us to discuss timelines.</p>
-      </details>
-    </div>
-  </section>
+    <!-- RIGHT SIDEBAR: CONTACT FORM -->
+    <aside class="right">
+      <h3>Contact Us <span class="jp">お問い合わせ</span></h3>
+      <form>
+        <input type="text" placeholder="Your name / お名前"><br>
+        <input type="email" placeholder="Your email / メール"><br>
+        <textarea placeholder="Your message / メッセージ"></textarea><br>
+        <button type="submit">Send / 送信</button>
+        <button type="reset">Clear / クリア</button>
+      </form>
+    </aside>
+  </div>
 
   <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <p>© 2025 VisionPath</p>
-      <a class="btn sm" href="contact.html">Contact</a>
-    </div>
+  <footer>
+    &copy; 2025 VisionPath. All rights reserved.<br>
+    <span class="jp">© 2025 ビジョンパス. 無断複写・転載を禁じます。</span>
   </footer>
+
 </body>
 </html>
