@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact VisionPath</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">VisionPath</a>
+      <nav class="nav">
+        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#faq">FAQ</a>
+        <a class="btn sm" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero small-hero" style="--hero:url('images/hero.jpg')">
+    <div class="overlay">
+      <div class="container hero-inner">
+        <h1>Contact Us</h1>
+        <p>お問い合わせ</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <h2>Get in touch <span class="jp sub">お問い合わせ</span></h2>
+      <p>Please tell us how you’d like to work together. We’ll respond as soon as possible.</p>
+      <p class="jp">ご要望や導入について簡単にお知らせください。できるだけ早くご返信いたします。</p>
+
+      <!-- Simple static form using mailto -->
+      <form class="form" action="mailto:your.email@example.com" method="post" enctype="text/plain">
+        <label>Name / お名前
+          <input type="text" name="name" required>
+        </label>
+        <label>Email / メール
+          <input type="email" name="email" required>
+        </label>
+        <label>Organization / 組織
+          <input type="text" name="org">
+        </label>
+        <label>Message / メッセージ
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="btn" type="submit">Send</button>
+        <a class="btn ghost" href="mailto:your.email@example.com">Open Mail App</a>
+      </form>
+
+      <p class="tiny">For detailed materials, we can share under NDA.<br><span class="jp">詳細資料は秘密保持契約のもとで共有可能です。</span></p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© 2025 VisionPath</p>
+      <a class="btn sm" href="index.html">Back to Home</a>
+    </div>
+  </footer>
+</body>
+</html>
