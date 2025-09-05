@@ -1,68 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>VisionPath Smart Walker</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- HEADER -->
-  <header>
-    <h1>Welcome to VisionPath’s Website</h1>
-    <p class="jp">ビジョンパスの公式ウェブサイトへようこそ</p>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+        <a class="title" href="index.html">VisionPath</a>
+        <p class="jp sub">ビジョンパス</p>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">HOME / ホーム</a>
+        <a href="#gallery">GALLERY / ギャラリー</a>
+        <a href="#get-involved">GET INVOLVED / 参加方法</a>
+        <a href="contact.html">CONTACT / お問い合わせ</a>
+      </nav>
+
+      <!-- Logo top right -->
+      <a class="logo-link" href="index.html" aria-label="VisionPath logo">
+        <img class="logo" src="images/logo.png" alt="VisionPath logo">
+      </a>
+    </div>
   </header>
 
-  <!-- NAVIGATION -->
-  <nav>
-    <a href="index.html">HOME / ホーム</a> |
-    <a href="contact.html">CONTACT / お問い合わせ</a>
-  </nav>
+  <!-- NAV STRIP FOR SMALL SCREENS -->
+  <div class="nav-strip">
+    <a href="index.html">HOME</a> |
+    <a href="#gallery">GALLERY</a> |
+    <a href="#get-involved">GET INVOLVED</a> |
+    <a href="contact.html">CONTACT</a>
+  </div>
 
-  <!-- CONTENT WRAPPER -->
+  <!-- MAIN LAYOUT -->
   <div class="container">
 
     <!-- LEFT SIDEBAR: MEDIA -->
     <aside class="left">
       <h3>Media Coverage <span class="jp">報道掲載</span></h3>
-      <ul>
+      <p class="small">
+        Selected coverage. Media kit on request
+        <span class="jp">一部の掲載例です メディア資料はお問い合わせください</span>
+      </p>
+      <ul class="links">
         <li><a href="https://whdh.com/news/hull-hs-student-creates-walker-designed-for-vision-impaired/" target="_blank">WHDH News</a></li>
         <li><a href="https://www.patriotledger.com/story/lifestyle/2024/05/28/hull-student-wins-hackathon-design-for-grandmas-smart-walker-massachusetts-institute-technology/73734835007/" target="_blank">Patriot Ledger</a></li>
         <li><a href="https://www.linkedin.com/in/jake-smith-230000221/" target="_blank">LinkedIn</a></li>
       </ul>
     </aside>
 
-    <!-- MAIN: ABOUT COMPANY -->
+    <!-- MAIN CONTENT -->
     <main>
       <h2>About VisionPath <span class="jp">ビジョンパスについて</span></h2>
       <p>
-        VisionPath is developing a smart walker designed to support safer mobility for seniors and people with vision loss. 
-        The walker provides simple guidance and helps users feel more confident in daily life.
+        VisionPath builds a smart walker that supports safer daily mobility for seniors and people with vision loss.
+        It gives clear guidance and aims to bring more confidence at home and in familiar places.
       </p>
       <p class="jp">
-        ビジョンパスは、高齢者や視覚に不自由のある方の安全な移動を支援するスマート歩行器を開発しています。<br>
-        わかりやすいガイダンスを提供し、日常生活で安心して歩行できるようサポートします。
+        ビジョンパスは 高齢者や視覚に不自由のある方のために 毎日の歩行をより安心にするスマート歩行器を開発しています
+        分かりやすいガイダンスを提供し 自宅や馴染みの場所での安心感の向上を目指します
       </p>
-      <img src="images/walker-1.jpg" alt="VisionPath prototype" width="300">
+
+      <!-- Simple gallery area. Add as many images as you want into /images -->
+      <section id="gallery" class="gallery">
+        <figure><img src="images/walker-1.jpg" alt="Prototype front"></figure>
+        <figure><img src="images/walker-2.jpg" alt="Handle and frame"></figure>
+        <figure><img src="images/walker-3.jpg" alt="Hallway test"></figure>
+        <figure><img src="images/walker-4.jpg" alt="Outdoor use"></figure>
+        <figure><img src="images/walker-5.jpg" alt="Close up"></figure>
+        <figure><img src="images/walker-6.jpg" alt="User trial"></figure>
+      </section>
+
+      <!-- Get Involved section -->
+      <section id="get-involved" class="cta-wrap">
+        <h2>Get Involved <span class="jp">参加方法</span></h2>
+        <p>
+          We welcome partners and supporters who can help us move faster and help more people
+        </p>
+        <p class="jp">
+          私たちは より早く前進し 多くの方を支援するために ご協力いただける皆さまを歓迎します
+        </p>
+
+        <div class="callouts">
+          <article class="callout">
+            <h3>Mentorship <span class="jp">メンタリング</span></h3>
+            <ul class="checklist">
+              <li>Product and usability feedback</li>
+              <li>User testing and safety advice</li>
+              <li>Go to market planning</li>
+            </ul>
+          </article>
+
+          <article class="callout">
+            <h3>Partnerships <span class="jp">パートナー連携</span></h3>
+            <ul class="checklist">
+              <li>Care facilities and universities</li>
+              <li>Municipal pilot programs</li>
+              <li>Manufacturing and logistics</li>
+            </ul>
+          </article>
+
+          <article class="callout">
+            <h3>Connections <span class="jp">ご紹介</span></h3>
+            <ul class="checklist">
+              <li>Elder care professionals</li>
+              <li>Assistive tech leaders</li>
+              <li>Potential pilot sites</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="nda-note">
+          <p>
+            For more information we can share details under an NDA because a patent application is in progress
+          </p>
+          <p class="jp">
+            特許出願準備中のため 詳細情報は秘密保持契約のもとで共有します
+          </p>
+        </div>
+
+        <div class="cta-buttons">
+          <a class="btn" href="contact.html">Contact / お問い合わせ</a>
+          <a class="btn ghost" href="mailto:your.email@example.com?subject=VisionPath NDA Request">Request NDA / NDAのご相談</a>
+        </div>
+      </section>
     </main>
 
-    <!-- RIGHT SIDEBAR: CONTACT FORM -->
+    <!-- RIGHT SIDEBAR: CONTACT QUICK FORM -->
     <aside class="right">
-      <h3>Contact Us <span class="jp">お問い合わせ</span></h3>
-      <form>
-        <input type="text" placeholder="Your name / お名前"><br>
-        <input type="email" placeholder="Your email / メール"><br>
-        <textarea placeholder="Your message / メッセージ"></textarea><br>
+      <h3>Quick Contact <span class="jp">簡単お問い合わせ</span></h3>
+      <form class="mini-form" action="mailto:your.email@example.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your name / お名前">
+        <input type="email" name="email" placeholder="Your email / メール">
+        <textarea name="message" rows="5" placeholder="Your message / メッセージ"></textarea>
         <button type="submit">Send / 送信</button>
-        <button type="reset">Clear / クリア</button>
+        <button type="reset" class="ghost">Clear / クリア</button>
       </form>
+      <p class="tiny">
+        For a full form use the Contact page
+        <span class="jp">詳細はお問い合わせページをご利用ください</span>
+      </p>
     </aside>
+
   </div>
 
   <!-- FOOTER -->
   <footer>
-    &copy; 2025 VisionPath. All rights reserved.<br>
-    <span class="jp">© 2025 ビジョンパス. 無断複写・転載を禁じます。</span>
+    © 2025 VisionPath
+    <br><span class="jp">© 2025 ビジョンパス</span>
   </footer>
 
 </body>
